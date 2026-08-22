@@ -9,8 +9,10 @@ import {Syringe} from 'lucide-react'
 import {Pill} from 'lucide-react'
 import {Bot} from 'lucide-react'
 import {HeartPulse} from 'lucide-react'
+import {useNavigate} from 'react-router-dom'
 export const Services = (props) => {
-  return (
+  const navigate = useNavigate();
+  return(
     <div>
       <Header/>
       <div className="bg-orange-200 h-full w-full">
@@ -25,13 +27,16 @@ export const Services = (props) => {
         logo={<Stethoscope size={24} className="text-green-600" />}
          title="Symptoms checker" 
          description="Check your symptoms and get personalized health insights." 
-         button="Check Symptoms" />
+         button="Check Symptoms" 
+         onClick={() => navigate('/SymptomChecker')}
+         />
          <Card
          img="https://images.unsplash.com/photo-1758691461990-03b49d969495?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bWVkaWNhbCUyMHJlcG9ydHxlbnwwfHwwfHx8MA%3D%3D"
         logo={<ClipboardPlus size={24}  className="text-blue-600"/>}
-         title="Medical Report" 
+         title="Medical Report"
          description="Review your medical reports and test results." 
-         button="View Report" />
+         button="View Report" 
+         onClick={() => navigate('/MedicalReport')}/>
          <Card
          img="https://images.unsplash.com/photo-1631549916768-4119b2e5f926?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWVkaWNpbmVzfGVufDB8fDB8fHww" 
          title="Medicines" 

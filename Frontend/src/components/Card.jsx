@@ -16,7 +16,7 @@ export const Card = (props) => {
       </div>
       <p className=" text-gray-500 font-semibold w-[250px]">{props.description}</p>
       <div className="bg-black shadow-lg w-[180px] rounded-md text-white flex justify-center items-center py-2 mt-1 mb-5">
-      <button>{props.button}</button>
+      <button onClick={props.onClick}>{props.button}</button>
       </div>
       </div>
 
