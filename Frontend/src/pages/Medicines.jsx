@@ -43,8 +43,8 @@ export const Medicines = () => {
             
         </form>
         </div>
-        <div className=" flex items-center justify-center mt-6 mb-4">
-        <button className=" text-xl bg-amber-400 rounded-2xl hover:bg-green-500 italic px-2">Check Result</button>
+        <div className=" flex  items-center justify-center mt-6 mb-4">
+        <button className=" text-xl bg-blue-700 rounded-2xl hover:bg-green-500 italic w-[250px]">Check Result</button>
         </div>
         <Navbar/>
     </div>

@@ -42,7 +42,8 @@ export const Services = (props) => {
          title="Medicines" 
          logo={<Syringe size={24} className="text-amber-500" />}
          description="Find information about your medications and their uses." 
-         button="View Medicines" />
+         button="Check Medicine"
+         onClick={()=> navigate('/Medicines')} />
          <Card
          img="https://plus.unsplash.com/premium_photo-1661377017395-29704cafd624?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZHJ1ZyUyMGludGVyYWN0aW9ufGVufDB8fDB8fHww" 
          title="Drug Interaction" 

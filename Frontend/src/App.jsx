@@ -8,6 +8,7 @@ import Signup from './pages/Signup.jsx'
 import SymptomChecker from  './pages/SymptomChecker'
 import MedicalReport from './pages/MedicalReport'
 import Medicines from './pages/Medicines'
+import DrugInteraction from './pages/DrugInteraction'
 export const App = () => {
   return (
     <div>
@@ -20,6 +21,7 @@ export const App = () => {
         <Route path="/SymptomChecker" element={<SymptomChecker/>}/>
         <Route path ="/MedicalReport" element= {<MedicalReport />} />
         <Route path="/Medicines" element={<Medicines />} />
+        <Route path="/DrugInteraction" element={<DrugInteraction />} />
       </Routes>
 
     </div>
