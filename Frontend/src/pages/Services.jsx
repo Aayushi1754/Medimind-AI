@@ -49,13 +49,15 @@ export const Services = (props) => {
          title="Drug Interaction" 
          logo={<Pill size={24} className="text-red-600" />}
          description="Check for potential interactions between your medications." 
-         button="Check Interactions" />
+         button="Check Interactions" 
+         onClick={()=> navigate('/DrugInteraction')}/>
          <Card
          img="https://images.unsplash.com/photo-1684369175833-4b445ad6bfb5?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2hhdGJvdHxlbnwwfHwwfHx8MA%3D%3D" 
          title="AI Assistant" 
          logo={<Bot size={24} className="text-purple-600" />}
          description="Get personalized health advice and support." 
-         button="Chat with AI" />
+         button="Chat with AI"
+         onClick={()=> navigate('/AiChat')} />
           <Navbar />
           </div>
     </div>

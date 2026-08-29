@@ -10,6 +10,7 @@ import MedicalReport from './pages/MedicalReport'
 import Medicines from './pages/Medicines'
 import DrugInteraction from './pages/DrugInteraction'
 import AiChat from './pages/AiChat'
+import Help from './pages/Help'
 export const App = () => {
   return (
     <div>
@@ -24,6 +25,8 @@ export const App = () => {
         <Route path="/Medicines" element={<Medicines />} />
         <Route path="/DrugInteraction" element={<DrugInteraction />} />
         <Route path="/AiChat" element ={< AiChat />} />
+        <Route path="/Book Apointment" element={< Login />} />
+        <Route path="/Help" element= { <Help />} />
       </Routes>
 
     </div>
