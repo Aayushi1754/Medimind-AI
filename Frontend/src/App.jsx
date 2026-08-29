@@ -7,6 +7,7 @@ import Login from './pages/Login.jsx'
 import Signup from './pages/Signup.jsx'
 import SymptomChecker from  './pages/SymptomChecker'
 import MedicalReport from './pages/MedicalReport'
+import Medicines from './pages/Medicines'
 export const App = () => {
   return (
     <div>
@@ -18,6 +19,7 @@ export const App = () => {
         <Route path="/Signup" element ={<Signup />} />
         <Route path="/SymptomChecker" element={<SymptomChecker/>}/>
         <Route path ="/MedicalReport" element= {<MedicalReport />} />
+        <Route path="/Medicines" element={<Medicines />} />
       </Routes>
 
     </div>
