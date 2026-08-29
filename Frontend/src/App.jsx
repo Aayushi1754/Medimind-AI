@@ -9,6 +9,7 @@ import SymptomChecker from  './pages/SymptomChecker'
 import MedicalReport from './pages/MedicalReport'
 import Medicines from './pages/Medicines'
 import DrugInteraction from './pages/DrugInteraction'
+import AiChat from './pages/AiChat'
 export const App = () => {
   return (
     <div>
@@ -22,6 +23,7 @@ export const App = () => {
         <Route path ="/MedicalReport" element= {<MedicalReport />} />
         <Route path="/Medicines" element={<Medicines />} />
         <Route path="/DrugInteraction" element={<DrugInteraction />} />
+        <Route path="/AiChat" element ={< AiChat />} />
       </Routes>
 
     </div>
